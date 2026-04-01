@@ -1,0 +1,134 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Courier New'
+}
+h2 {
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode'
+}
+
+p {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+#First {
+    color: black;
+    text-align: left;
+    border-style: groove;
+}
+
+#Second {
+    text-align: left;
+    margin-top: -1%;
+}
+
+#Third {
+    text-indent: -50%;
+    font-size: 20px;
+    color: pink;
+    text-align: center;
+    text-shadow:
+      0 0 5px pink,
+      0 0 10px pink,
+      0 0 20px pink,
+      0 0 40px pink,
+      0 0 80px pink;
+
+}
+
+#Fourth {
+    text-indent: -50%;
+}
+
+.highlight1 {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.hyperlink-container {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.ROWSCOLUMNS {
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border: 2px solid black;
+}
+
+th, td {
+    border: 2px solid black;
+}
+
+.grid-container {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer" ;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 80px 1fr 60px;
+    gap: 5px;
+    border: 3px solid blue;
+    height: 100vh;
+}
+
+header {
+     grid-area: header;
+  background-color: #fff;
+  border: 2px solid #3399ff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 80px;
+}
+
+nav a {
+  display: block;
+  color: #0066cc;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+  border: 2px solid #3399ff;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  border: 2px solid #3399ff;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+}

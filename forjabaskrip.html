@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jaba</title>
+</head>
+<body>
+    <p id="hhhh">wan</p>
+
+    <!--<button type="Button" onclick='document.getElementById("hhhh").innerHTML = "Jabaskrip"''>Click this</button>-->
+    <button onclick="toggletext()">Click!</button>
+
+    <script>
+        let counter = 0 ; 
+        function toggletext() {
+             counter = counter + 1 //1
+             console.log(counter);  //
+             let el =document.getElementById("hhhh");
+             if(counter === 1){ 
+                 el.innerHTML = "tres";  // pag 1 dos sya  
+                 console.log("counter: ", 1)
+             } 
+             console.log(el.innerHTML) // console innerHTML 
+             
+            
+             if (el.innerHTML === "tres") {       // kapag tres, magiging again 
+                 el.innerHTML = "dos";
+                 console.log(el.innerHTML)
+                 return
+             }
+            
+             if(el.innerHTML === "dos") {    /// dos
+                //  console.log("Nice"); 
+               el.innerHTML = "tres"
+              
+               return; 
+             }
+    }
+
+    console.log()
+    </script>
+
+    
+
+    
+</body>
+</html>
