@@ -13,3 +13,4 @@ let fullName = firstName + " " + lastName
 console.log(fullName);
 
 console.log("javaScript Connected!")
+console.log("updated codes"); 
